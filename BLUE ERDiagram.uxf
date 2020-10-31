@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>119</x>
+      <y>399</y>
+      <w>91</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>users
+-
+id
+first_name
+last_name
+email
+phone
+password
+address
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>126</y>
+      <w>70</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>categories
+-
+PK:id
+name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>105</y>
+      <w>91</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>products
+-
+PK:id
+FK:category_id
+FK:supplier_id
+name
+average_rating
+quantity
+description
+unit_price
+image_url
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>112</y>
+      <w>98</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>order_products
+-
+PK:id
+FK:order_id
+FK:product_id
+quantity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>406</y>
+      <w>70</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>wishlist
+-
+id
+FK:user_id
+FK:product_id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>364</y>
+      <w>119</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>orders
+-
+PK:id
+FK:user_id
+delivery_address
+delivery_phone
+delivery_method
+delivery_status
+delivery_cost
+payment_method
+payment_status
+payment_ref
+total_cost
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>196</x>
+      <y>140</y>
+      <w>203</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>203</x>
+      <y>427</y>
+      <w>189</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>231</y>
+      <w>28</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>469</x>
+      <y>147</y>
+      <w>126</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>623</x>
+      <y>203</y>
+      <w>28</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>238</y>
+      <w>77</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>cart
+-
+PK:id
+FK:user_id
+FK:product_id
+quantity
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>196</x>
+      <y>161</y>
+      <w>203</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>329</y>
+      <w>28</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "2f37b0b0-d1e8-4b6d-9299-17022a5816ff",
+		"name": "BLUE APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Hayford\",\r\n    \"last_name\":\"Ansah\",\r\n    \"phone\":\"0269448000\",\r\n    \"email\":\"heyphord@gmail.com\",\r\n    \"password\":\"223344\",\r\n    \"password_confirmation\":\"223344\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/user/register",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"heyphordd@gmail.com\",\r\n    \"password\": \"223344\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/user/login",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"first_name\":\"Hayford\",\r\n    \"last_name\":\"Ansah\",\r\n    \r\n    \"email\":\"heyphord@gmail.com\",\r\n    \"address\":\"Address goes here\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/user//update",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"user",
+						"",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset User Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n   \r\n    \"old_password\":\"223344\",\r\n    \"new_password\":\"223344\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/user/reset-password",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"user",
+						"reset-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/category",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Category by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/category/2",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"category",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Electronics\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/category",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/category/2",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"category",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/category/2",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"category",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/products",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/products/1",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\": 3,\r\n    \"name\":\"LED plaques\",\r\n    \"quantity\": 3,\r\n    \"unit_price\": 44.55,\r\n    \"image_url\": \"https://ae01.alicdn.com/kf/HTB1zZFbeJ.LL1JjSZFEq6AVmXXaa/Swim-3D-LED-Light-Sign-Acrylic-LED-Signs-Home-Decor-Gift-Bar-Panels-Plate-Plaques-Desktop.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/products",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\":null ,\r\n    \"name\":null,\r\n    \"quantity\": 4,\r\n    \"unit_price\": null,\r\n    \"image_url\": \"https://ae01.alicdn.com/kf/HTB1zZFbeJ.LL1JjSZFEq6AVmXXaa/Swim-3D-LED-Light-Sign-Acrylic-LED-Signs-Home-Decor-Gift-Bar-Panels-Plate-Plaques-Desktop.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/products/2",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/products/2",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3,\r\n    \"product_id\": 2,\r\n    \"quantity\": 3\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/cart/1",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"cart",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart by User Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/cart/1/user",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"cart",
+						"1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3,\r\n    \"product_id\": 2,\r\n    \"quantity\": 3\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/cart",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cart by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3,\r\n    \"product_id\": 2,\r\n    \"quantity\": 3\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/cart/2",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"cart",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cart by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/cart/1",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"cart",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/order",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/order/6",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"order",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 1,\r\n    \"delivery_phone\": \"0269448000\",\r\n    \"delivery_address\": \"Address goes here\",\r\n    \"delivery_method\": \"DELIVERY METHOD\",\r\n    \"delivery_status\": \"ORDER CREATED\",\r\n    \"delivery_cost\": 2.33,\r\n    \"payment_method\": \"MOMO\",\r\n    \"payment_status\": \"PENDING\",\r\n    \"total_cost\": 20.33,\r\n    \"products\": [\r\n        {\r\n            \"product_id\": 1,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"product_id\": 3,\r\n            \"quantity\": 4\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/order",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order by User Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/order/1/user",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"order",
+						"1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": 2,\r\n    \"user_id\": 3,\r\n    \"delivery_phone\": \"0269448000\",\r\n    \"delivery_address\": \"Address goes here\",\r\n    \"delivery_method\": \"DELIVERY METHOD\",\r\n    \"delivery_status\": \"ORDER CREATED\",\r\n    \"delivery_cost\": 2.33,\r\n    \"payment_method\": \"MOMO\",\r\n    \"payment_status\": \"PENDING\",\r\n    \"total_cost\": 20.33,\r\n    \"products\": [\r\n        {\r\n            \"product_id\": 1,\r\n            \"quantity\": 2\r\n        },\r\n        {\r\n            \"product_id\": 3,\r\n            \"quantity\": 4\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/order",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/order/1",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Wishlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3,\r\n    \"product_id\": 2   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/wishlist",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users by User Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/wishlist/1/user",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"wishlist",
+						"1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Wishlist by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aljani_url}}/wishlist/1",
+					"host": [
+						"{{aljani_url}}"
+					],
+					"path": [
+						"wishlist",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
